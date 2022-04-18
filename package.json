@@ -1,6 +1,7 @@
 {
   "name": "react-star-wars",
   "version": "0.1.0",
+  "homepage": "https://bohdansolo.github.io/react-star-wars/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
