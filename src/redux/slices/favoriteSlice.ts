@@ -10,7 +10,7 @@ export const favoriteSlice = createSlice({
   initialState,
   reducers: {
     addPersonToFavorite: (state, action: PayloadAction<FavoriteArrTypes>) => {
-      state.favList?.push(action.payload)
+      state.favList.push(action.payload)
     },
     removePersonToFavorite: (state, action: PayloadAction<number>) => {
        state.favList = state.favList?.filter(item => +Object.keys(item) !== +action.payload)
