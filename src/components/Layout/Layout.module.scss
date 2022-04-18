@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+
+}
+
+.list__container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+  a {
+    display: block;
+    margin: 0 10px;
+    padding: 7px 10px;
+    min-width: 70px;
+    color: white;
+    border: 2px solid transparent;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 10px white;
+    transition: all 0.4s;
+    font-size: 20px;
+    &:hover {
+      color: #ac7dbe;
+      text-shadow: 0 0 10px #ae74c2;
+
+    }
+  }
+
+  & :global(a.active) {
+    border: 2px solid #ae74c2;
+    color: #ae74c2;
+    text-shadow: none;
+    transition: all 0.4s;
+    border-radius: 3px;
+
+  }
+}
+
+.logo {
+  margin-left: -5px;
+  width: 60px;
+  height: 60px;
+  margin-right: 30px;
+  object-fit: cover;
+  object-position: center center; // Останні дві щоб пропорції зображення не порушувалися
+}
