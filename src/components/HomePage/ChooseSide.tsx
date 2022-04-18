@@ -53,7 +53,7 @@ const ChooseSide = () => {
   ];
   return (
     <div className={styles.container}>
-      <span className="header__text">Choose your side:</span>
+      <span className="header__text">Choose your sideeeeee:</span>
       <br />
       {elements?.map(({ theme, themeStyles, text, img }) => (
         <ChooseSideItem
