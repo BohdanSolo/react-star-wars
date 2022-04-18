@@ -1,0 +1,34 @@
+.wrapper {
+  margin: 0 30px;
+  padding: 20px 0;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list__item {
+  display: flex;
+align-items: center;
+  margin-bottom: 7px;
+}
+.item__episode {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #f75d83;
+}
+.item__colon {
+  width: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.item__title {
+  text-shadow: 0 0 40px yellow;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
