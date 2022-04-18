@@ -5,6 +5,7 @@ import App from "./containers/app/App.tsx";
 import { BrowserRouter } from "react-router-dom";
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
+import {REPO_NAME} from "./constants/repo";
 
 /*
 ReactDOM.render(
@@ -21,7 +22,7 @@ ReactDOM.render(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={`/${REPO_NAME}/`}>
         <App />
       </BrowserRouter>
     </Provider>

@@ -27,14 +27,3 @@ export const URL_IMG_PERSON = GUIDE_ROOT_IMG+GUIDE_PEOPLE
 export const LIGHT_THEME = 'LIGHT_THEME'
 export const DARK_THEME = 'DARK_THEME'
 export const NEUTRAL_THEME = 'NEUTRAL_THEME'
-
-
-let sayHi = function (who) {
-    if (who) {
-        alert(`Hello, ${who}`);
-    } else {
-        sayHi('Guest')
-    }
-};
-
-sayHi();

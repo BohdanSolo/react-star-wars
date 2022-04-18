@@ -6,7 +6,7 @@ import { useAppSelector } from "../../hooks/reduxHooks";
 
 const Favorite = () => {
   const objOfFav = useAppSelector((state) => state.favorite.favList);
-  const [count, setCount] = useState<number | string>(0);
+  const [count, setCount] = useState(0);
   useEffect(() => {
     setCount(objOfFav.length);
   }, [objOfFav]);
