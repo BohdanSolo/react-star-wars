@@ -8,8 +8,8 @@ const Favorite = () => {
     const objOfFav = useAppSelector(state => state.favorite.favList)
     const [count, setCount] = useState<number | string>(0)
     useEffect(() => {
-        const countOfFav = objOfFav.length
-        countOfFav.toString().length > 2 ? setCount("...") : setCount(countOfFav)
+        const countOfFav = objOfFav?.length
+        countOfFav && countOfFav.toString().length > 2 ? setCount("...") : setCount(countOfFav)
     },[objOfFav])
     return (
         <div className={styles.container}>
