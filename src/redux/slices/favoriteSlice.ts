@@ -3,7 +3,7 @@ import {FavoriteArrTypes, FavoriteSliceTypes} from "../reduxTypes";
 import {getLocalStore} from "../../utils/localStorage";
 
 const initialState: FavoriteSliceTypes = {
-  favList: getLocalStore('store').length > 0 ? getLocalStore('store') : [] ,
+  favList: getLocalStore('store').length ? getLocalStore('store') : [] ,
 };
 export const favoriteSlice = createSlice({
   name: "favoriteSlice",
