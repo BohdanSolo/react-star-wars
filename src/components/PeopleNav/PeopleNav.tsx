@@ -33,7 +33,7 @@ const PeopleNav = ({
             theme={'dark'}
           isDisabled={!prevPage}
           handleNavClick={handlePrev}
-          text={"Previous"}
+          text={"Prev"}
         />
       </Link>
       <Link className={styles.links} to={`/people/?page=${counterPage + 1}`}>

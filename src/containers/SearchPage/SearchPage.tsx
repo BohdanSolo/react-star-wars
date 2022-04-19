@@ -59,12 +59,14 @@ const SearchPage = ({ setErrApi }: Props) => {
   return (
     <>
       <h1 className={"header__text"}>Search</h1>
+      <div className={styles.wrapper}>
       <UiInput
         value={value}
         handleInputChange={handleInputChange}
         placeholder={"Character's name"}
         classes={styles.input__search}
       />
+      </div>
       <SearchPageInfo people={people} />
     </>
   );

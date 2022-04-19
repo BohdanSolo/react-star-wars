@@ -10,9 +10,8 @@
   }
   @media(max-width: 600px) {
     column-count: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
 
   }
 }

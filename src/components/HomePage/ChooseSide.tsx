@@ -1,5 +1,5 @@
 // @ts-ignore
-import React, {useId} from "react"; // Maybe, there are some conflicts between React 18 and TS
+import React, { useId, useState } from "react"; // Maybe, there are some conflicts between React 18 and TS
 import { useAppDispatch } from "../../hooks/reduxHooks";
 import { changeTheme } from "../../redux/slices/themeSlice";
 import {
@@ -20,9 +20,21 @@ interface Props {
   themeStyles: string;
 }
 const ChooseSideItem = ({ theme, text, img, themeStyles }: Props) => {
+  const [active, setActive] = useState<boolean>(false);
   const dispatch = useAppDispatch();
+  const handleChangeTheme = (): void => {
+    dispatch(changeTheme(theme));
+    setActive(!active);
+  };
   return (
-    <div className={cn(styles.item,  themeStyles)} onClick={() => dispatch(changeTheme(theme))}>
+    <div
+      className={cn(
+        styles.item,
+        themeStyles,
+        active ? `${themeStyles}--active` : ""
+      )}
+      onClick={handleChangeTheme}
+    >
       <div className={styles.item__header}>{text}</div>
       <img className={styles.item__img} src={img} alt="" />
     </div>
@@ -30,7 +42,7 @@ const ChooseSideItem = ({ theme, text, img, themeStyles }: Props) => {
 };
 
 const ChooseSide = () => {
-    const id = useId()
+  const id = useId();
   const elements: Array<Props> = [
     {
       theme: LIGHT_THEME,
@@ -47,7 +59,7 @@ const ChooseSide = () => {
     {
       theme: NEUTRAL_THEME,
       themeStyles: styles.neutral__side,
-      text: "Neutral Side",
+      text: "I'm Han Solo",
       img: neutralSide,
     },
   ];
