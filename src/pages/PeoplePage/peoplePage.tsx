@@ -58,12 +58,6 @@ const PeoplePage = ({ setErrApi }: any ): JSX.Element => {
         getResource={getResource}
       />
       <PeopleList people={people} />
-      <PeopleNav
-          prevPage={prevPage}
-          nextPage={nextPage}
-          counterPage={counterPage}
-          getResource={getResource}
-      />
     </>
   );
 };
