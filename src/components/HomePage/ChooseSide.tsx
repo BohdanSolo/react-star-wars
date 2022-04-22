@@ -1,5 +1,5 @@
 // @ts-ignore
-import React, { useId, useState } from "react"; // Maybe, there are some conflicts between React 18 and TS
+import React, {useState } from "react"; // Maybe, there are some conflicts between React 18 and TS
 import { useAppDispatch } from "../../hooks/reduxHooks";
 import { changeTheme } from "../../redux/slices/themeSlice";
 import {
@@ -42,7 +42,6 @@ const ChooseSideItem = ({ theme, text, img, themeStyles }: Props) => {
 };
 
 const ChooseSide = () => {
-  const id = useId();
   const elements: Array<Props> = [
     {
       theme: LIGHT_THEME,
@@ -69,7 +68,7 @@ const ChooseSide = () => {
       <br />
       {elements?.map(({ theme, themeStyles, text, img }) => (
         <ChooseSideItem
-          key={id}
+          key={text}
           theme={theme}
           themeStyles={themeStyles}
           text={text}

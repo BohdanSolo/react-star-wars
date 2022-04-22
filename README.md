@@ -1,4 +1,5 @@
 # Star Wars Application
+
 ##Links
 
 - [Link to the project on gh-pages](https://bohdansolo.github.io/react-star-wars/);
@@ -6,6 +7,7 @@
 - [Link to repository](https://github.com/BohdanSolo/react-star-wars);
 
 ##Scripts
+
 ```bash
 npm start                # run app in the development mode
 npm run build            # builds the app for production

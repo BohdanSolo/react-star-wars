@@ -6,11 +6,9 @@ import droid from "../../assets/img/header/droid.svg";
 import lightSaber from "../../assets/img/header/lightsaber.svg";
 import spaceStation from "../../assets/img/header/space-station.svg";
 import { useAppSelector } from "../../hooks/reduxHooks";
-import { stat } from "fs";
 import {
   DARK_THEME,
   LIGHT_THEME,
-  NEUTRAL_THEME,
 } from "../../constants/api-constants";
 
 const Layout = (): JSX.Element => {

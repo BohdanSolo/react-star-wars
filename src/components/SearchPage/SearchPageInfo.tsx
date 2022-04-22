@@ -1,5 +1,5 @@
 import React from "react";
-import { PeopleTypes } from "../../containers/SearchPage/SearchPage";
+import { PeopleTypes } from "../../pages/SearchPage/SearchPage";
 import { Link } from "react-router-dom";
 import styles from "./SearchPageInfo.module.scss"
 
