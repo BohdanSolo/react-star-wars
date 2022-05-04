@@ -1,15 +1,18 @@
 import React, { Suspense, useEffect, useState } from "react";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
-import { getApiResource } from "../../utils/network";
+
+import { useParams } from "react-router-dom";
+
 import { API_PERSON } from "../../constants/api-constants";
-import withErrorApi from "../../hoc/withErrorApi";
+import { useAppSelector } from "../../hooks/reduxHooks";
+import { getApiResource } from "../../utils/network";
 import { getPeopleImg } from "../../services/getPeopleData";
+import withErrorApi from "../../hoc/withErrorApi";
 import PersonImg from "../../components/PersonPage/PersonImg/PersonImg";
 import PersonInfo from "../../components/PersonPage/PersonInfo/PersonInfo";
-import styles from "./PersonPage.module.scss";
 import PersonLinkBack from "../../components/PersonPage/PersonLinkBack/PersonLinkBack";
 import UILoading from "../../UI/UILoading/UILoading";
-import { useAppSelector } from "../../hooks/reduxHooks";
+import styles from "./PersonPage.module.scss";
+
 
 const PersonFilms = React.lazy(
   () => import("../../components/PersonPage/PersonFilms/PersonFilms")

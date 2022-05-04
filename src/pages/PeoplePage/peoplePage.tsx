@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
-import {changeToHttps, getApiResource} from "../../utils/network";
-import withErrorApi from "../../hoc/withErrorApi";
-import {useQueryParams} from "../../hooks/useQueryParams";
-import PeopleNav from "../../components/PeopleNav/PeopleNav";
+
 import {API_PEOPLE} from "../../constants/api-constants";
+import withErrorApi from "../../hoc/withErrorApi";
+import PeopleNav from "../../components/PeopleNav/PeopleNav";
 import PeopleList from "../../components/people-page/people-list/people-list";
+import {changeToHttps, getApiResource} from "../../utils/network";
 import {getPeopleId, getPeopleImg, getPeoplePageId,} from "../../services/getPeopleData";
+import {useQueryParams} from "../../hooks/useQueryParams";
 
 export interface PeopleType {
   id: number;

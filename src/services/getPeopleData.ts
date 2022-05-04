@@ -32,3 +32,4 @@ export const getPeoplePageId = (url: string | undefined): number => {
   const pos = url!.lastIndexOf(SWAPI_PARAM_PAGE);
   return +url!.slice(pos + SWAPI_PARAM_PAGE.length, url!.length)
 }
+

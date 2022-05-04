@@ -1,6 +1,9 @@
 import React from "react";
-import styles from "./people-list.module.scss";
+
 import {Link} from "react-router-dom";
+
+import styles from "./people-list.module.scss";
+
 
 interface PropsTypes {
   name: string;

@@ -1,17 +1,20 @@
-// @ts-ignore
-import React, {useState } from "react"; // Maybe, there are some conflicts between React 18 and TS
+import React, {useState } from "react";
+
+import cn from "classnames";
+
 import { useAppDispatch } from "../../hooks/reduxHooks";
 import { changeTheme } from "../../redux/slices/themeSlice";
+import styles from "./ChooseSide.module.scss";
+import lightSide from "../../assets/img/themeButtons/light-side.jpg";
+import darkSide from "../../assets/img/themeButtons/dark-side.jpg";
+import neutralSide from "../../assets/img/themeButtons/falcon.jpg";
 import {
   DARK_THEME,
   LIGHT_THEME,
   NEUTRAL_THEME,
 } from "../../constants/api-constants";
-import styles from "./ChooseSide.module.scss";
-import lightSide from "../../assets/img/themeButtons/light-side.jpg";
-import darkSide from "../../assets/img/themeButtons/dark-side.jpg";
-import neutralSide from "../../assets/img/themeButtons/falcon.jpg";
-import cn from "classnames";
+
+
 
 interface Props {
   theme: typeof LIGHT_THEME | typeof DARK_THEME | typeof NEUTRAL_THEME;

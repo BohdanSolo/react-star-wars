@@ -1,11 +1,12 @@
-// @ts-ignore
 import React, { useCallback, useEffect, useState } from "react";
+
+import { debounce } from "lodash";
+
 import { getApiResource } from "../../utils/network";
 import { API_SEARCH } from "../../constants/api-constants";
-import withErrorApi from "../../hoc/withErrorApi";
 import { getPeopleId, getPeopleImg } from "../../services/getPeopleData";
+import withErrorApi from "../../hoc/withErrorApi";
 import SearchPageInfo from "../../components/SearchPage/SearchPageInfo";
-import { debounce } from "lodash";
 import UiInput from "../../UI/UIInput/UIInput";
 import styles from "./SearchPage.module.scss";
 
@@ -60,12 +61,12 @@ const SearchPage = ({ setErrApi }: Props) => {
     <>
       <h1 className={"header__text"}>Search</h1>
       <div className={styles.wrapper}>
-      <UiInput
-        value={value}
-        handleInputChange={handleInputChange}
-        placeholder={"Character's name"}
-        classes={styles.input__search}
-      />
+        <UiInput
+          value={value}
+          handleInputChange={handleInputChange}
+          placeholder={"Character's name"}
+          classes={styles.input__search}
+        />
       </div>
       <SearchPageInfo people={people} />
     </>

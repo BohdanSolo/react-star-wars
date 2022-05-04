@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+
 import { useAppSelector } from "../../hooks/reduxHooks";
+
 import PeopleList from "../../components/people-page/people-list/people-list";
 import styles from "./FavoritePage.module.scss";
 

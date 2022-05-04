@@ -1,7 +1,10 @@
 import React from 'react';
-import {Link, useNavigate} from "react-router-dom";
+
+import {useNavigate} from "react-router-dom";
+
 import styles from "./PersonLinkBack.module.scss"
 import back from "../../../assets/img/back.svg"
+
 
 const PersonLinkBack = () => {
     const nav = useNavigate()

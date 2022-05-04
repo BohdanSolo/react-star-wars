@@ -48,11 +48,6 @@ export const getApiResource = async (
   }
 };
 
-/*(async () => {
-    const body = await getApiResource('people/');
-    console.log(body);
-})()*/
-
 export const makeCuncurrentRequest = async (
   url: Array<string> | null | undefined
 ) => {

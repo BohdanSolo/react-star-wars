@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./PersonInfo.module.scss";
 
+
 interface Props {
   personInfo: Array<any> | null;
 }

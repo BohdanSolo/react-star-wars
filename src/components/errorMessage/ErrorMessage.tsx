@@ -1,7 +1,9 @@
 import React from "react";
+
+import cn from "classnames"
+
 import styles from "./ErrorMessage.module.scss";
 import video from "./video/han-solo.mp4";
-import cn from "classnames"
 
 const ErrorMessage = () => {
   return (

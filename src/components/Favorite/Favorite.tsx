@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+
 import { NavLink } from "react-router-dom";
+
 import styles from "./Favorite.module.scss";
 import FavoritesSVG from "../../assets/img/FavoritesSVG";
 import { useAppSelector } from "../../hooks/reduxHooks";

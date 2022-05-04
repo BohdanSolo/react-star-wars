@@ -1,6 +1,8 @@
 import React, {useEffect} from "react";
+
 import { NavLink, Outlet } from "react-router-dom";
 import styles from "./Layout.module.scss";
+
 import Favorite from "../Favorite/Favorite";
 import droid from "../../assets/img/header/droid.svg";
 import lightSaber from "../../assets/img/header/lightsaber.svg";

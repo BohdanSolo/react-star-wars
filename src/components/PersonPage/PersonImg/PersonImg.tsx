@@ -1,13 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
+
 import styles from "./PersonImg.module.scss";
+import StarSVG from "../../../assets/img/StarSVG";
 import { useAppDispatch } from "../../../hooks/reduxHooks";
+import { useLocation } from "react-router-dom";
 import {
   addPersonToFavorite,
   removePersonToFavorite,
 } from "../../../redux/slices/favoriteSlice";
-import { useLocation } from "react-router-dom";
 
-import StarSVG from "../../../assets/img/StarSVG";
 
 interface Props {
   personImg: string | undefined;

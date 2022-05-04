@@ -1,7 +1,9 @@
 import React from "react";
-import notFoundImg from "../../assets/img/notFound.png";
+
 import { useLocation } from "react-router-dom";
+import notFoundImg from "../../assets/img/notFound.png";
 import styles from "./NotFoundPage.module.scss";
+
 
 const NotFoundPage = (): JSX.Element => {
   const location = useLocation();

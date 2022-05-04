@@ -1,6 +1,7 @@
-// @ts-ignore
 import React from "react";
+
 import { Link } from "react-router-dom";
+
 import styles from "./PeopleNav.module.scss";
 import UiButton from "../../UI/UiButtons/UiButton";
 
