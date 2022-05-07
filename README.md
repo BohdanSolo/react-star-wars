@@ -6,7 +6,7 @@
 
 - [Link to repository](https://github.com/BohdanSolo/react-star-wars);
 
-##Scripts
+## Scripts
 
 ```bash
 npm start                # run app in the development mode
@@ -15,14 +15,14 @@ npm run build-gh-pages   # deploy on Github Pages
 npm run deploy           # build and deploy app on Github Pages
 ```
 
-##API
+## API
 - [Main API](https://swapi.dev/);
 
 - [Spare API](https://swapi.py4e.com/);
 
 - [Images for project](https://starwars-visualguide.com/);
 
-##Stack
+## Stack
 - JavaScript;
 - React 18.0;
 - TypeScript;
