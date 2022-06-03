@@ -1,6 +1,6 @@
 # Star Wars Application
 
-##Links
+## Links
 
 - [Link to the project on gh-pages](https://bohdansolo.github.io/react-star-wars/);
 

@@ -13,6 +13,7 @@ import FavoritePage from "../FavoritePage/FavoritePage";
 import styles from "./App.module.scss";
 
 const App = (): JSX.Element => {
+
   const element = useRoutes([
     {
       path: "/",
